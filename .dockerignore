@@ -1,0 +1,19 @@
+# Binaries
+*.exe
+
+# OS/Editor files
+.DS_Store
+*.log
+*.swp
+.idea/
+.vscode/
+
+# Git
+.git
+.gitignore
+
+# Env
+.env
+
+# Go cache & vendor
+vendor/
