@@ -1,36 +1,32 @@
-# Binaries for programs and plugins
+# Binary files
 *.exe
-*.exe~
 *.dll
 *.so
 *.dylib
 *.test
 *.out
 
-.env
-
-# Output of the go coverage tool
-*.coverprofile
-
 # Build directories
 bin/
 build/
 
-# Go workspace file
+# Go coverage
+*.coverprofile
+
+# Go workspace
 go.work
 go.work.sum
 
-# Dependency directories (remove the comment below if you use Go modules)
+# Vendor dependencies
 vendor/
 
-# IDE/editor specific
-.idea/
-.vscode/
-*.swp
-
-# Logs
+# Config files
+.env*
 *.log
 
-# OS-specific
+# Editor / OS
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+*.swp
