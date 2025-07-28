@@ -7,7 +7,6 @@ import (
 )
 
 func BannerRoutes(router *gin.Engine) {
-
 	banner := router.Group("/banner")
 	{
 		banner.GET("/list", controllers.GetBannerList)
