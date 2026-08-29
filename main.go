@@ -30,6 +30,16 @@ func main() {
 	routes.StationRoutes(router)
 	routes.LocationRoutes(router)
 
-	log.Printf("Server is running on port %s", config.GetEnv("PORT"))
-	router.Run(":" + os.Getenv("PORT"))
+
+	log.Printf("Server is running on port %s", os.Getenv("PORT"))
+	
+	port := os.Getenv("PORT")
+
+	if port == "" {
+    port = "8080"
+	}
+
+	if err := r.Run(":" + port); err != nil {
+    log.Fatal(err)
+	}
 }
